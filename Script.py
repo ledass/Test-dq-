@@ -5,7 +5,7 @@ class script(object):
     HELP_TXT = """ʜᴇʏ {}
 ʜᴇʀᴇ ɪs ᴍʏ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs."""
     ABOUT_TXT = """○ 𝖬𝗒 𝖭𝖺𝗆e : ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/vloggerdeven_TG'>𝖽𝗄 [𝖮𝖥𝖫𝖨𝖭𝖤]</a>
+○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/am_not_perfect4k'>Am_not_perfect</a>
 ○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 ○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
 ○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Contabo
@@ -16,7 +16,7 @@ class script(object):
 - ഇപ്പൊ കിട്ടും നോക്കി ഇരുന്നോ .
 
 <b>DEVS:</b>
-- <a href=https://t.me/smovieofficial>dk [OFLINE]</a>"""
+Onwer"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and 𝕋𝔼𝕊𝕊𝔸 will respond whenever a keyword is found the message
