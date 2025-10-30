@@ -1,6 +1,6 @@
 
 from aiohttp import web
-from .route import webcode
+from .webcoode import routes
 
 
 async def web_server():
