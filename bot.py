@@ -1,5 +1,6 @@
 import logging
 import logging.config
+from aiohttp import web 
 
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
@@ -21,7 +22,7 @@ class Bot(Client):
 
     def __init__(self):
         super().__init__(
-            session_name=SESSION,
+            name=SESSION, 
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
@@ -43,11 +44,14 @@ class Bot(Client):
         self.username = '@' + me.username
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(LOG_STR)
-        app = web.AppRunner(await web_server())
-        await app.setup()
-        bind_address = "0.0.0.0"
-        await web.TCPSite(app, bind_address, PORT).start()
-        
+        try:
+            app_runner = web.AppRunner(await web_server())
+            await app_runner.setup()
+            bind_address = "0.0.0.0"
+            await web.TCPSite(app_runner, bind_address, 8080).start()
+        except Exception as e:
+            logging.error(f"Failed to start web server: {e}")
+
 
     async def stop(self, *args):
         await super().stop()
